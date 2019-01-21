@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="pt-5 px-5">
+  <h1 class="title">Margaret Brewster</h1>
+  <h6>University of Waterloo Systems Design Engineering</h6>
+</div>
+<div class="row p-5">
+  <div class="col-12 p-0">
+  <ul class="p-0">
+  <li class="one"><a on-mouseover='flip()' (click)="active='projects'" [class.clicked]="active=='projects'" routerLink="/projects" href="#">Projects</a></li>
+ <li class="two" (click)="active='graph'" [class.clicked]="active=='graph'"><a routerLink="/graph"   href="#">skills</a></li>
+ <li class="three" (click)="active='links'" [class.clicked]="active=='links'"><a routerLink="/links"  href="#">Links</a></li>
+ <li class="four" (click)="active='resume'" [class.clicked]="active=='resume'"><a  href="..\assets\resume.pdf">Resume</a></li>
+    <hr />
+  </ul>
+</div>
+</div>
+<router-outlet></router-outlet>
+</div>
+
