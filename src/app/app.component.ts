@@ -14,7 +14,9 @@ export class AppComponent {
   @ViewChild(CardComponent) child;
 
   flip(){
-    this.child.flip()
+    if (this.child) {
+      this.child.flip()
+    }
   }
 
   ngOnInit(): void {
