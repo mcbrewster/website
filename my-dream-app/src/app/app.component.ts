@@ -9,11 +9,15 @@ import { CardComponent } from './card/card.component';
 })
 export class AppComponent {
   title = 'my-dream-app';
-  flipx: boolean; 
-  active :string; 
+  flipx: boolean;
+  active :string;
   @ViewChild(CardComponent) child;
-  
+
   flip(){
     this.child.flip()
+  }
+
+  ngOnInit(): void {
+    this.active = window.location.pathname.substr(1);
   }
 }
